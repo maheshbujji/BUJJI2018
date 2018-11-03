@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="#7fff00">
+            <table align="center" border="4">
+                <tr>
+                    <td>
+                        <a href="/maa/">
+                            <h1>comment</h1></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{ msg }}
+                    </td>
+                </tr>
+            </table>
+<table align="center" border="3">
+    <tr>
+        <td>name</td>
+        <td>cno</td>
+        <td>cmmnt</td>
+
+    </tr>
+    {% for x in emp %}
+        <tr>
+        <td>{{ x.name }}</td>
+        <td>{{ x.cno }}</td>
+        <td>{{ x.cmmnt }}</td>
+
+    {% endfor %}
+</table>
+
+
+</body>
+</html>
